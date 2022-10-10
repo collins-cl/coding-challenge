@@ -30,8 +30,7 @@ a {
     flex-direction: column;
   }
   .otherside {
-    position: relative;
-    left: 0;
     top: 10vh;
+    left: 10px;
   }
 }
