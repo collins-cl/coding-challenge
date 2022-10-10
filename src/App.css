@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1d2123;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.App {
+  display: flex;
+  position: relative;
+}
+
+.otherside {
+  position: absolute;
+  top: 10vh;
+  left: 12vh;
+}
+@media screen and (max-width: 600px) {
+  .App {
+    flex-direction: column;
+  }
+  .otherside {
+    position: relative;
+    left: 0;
+    top: 10vh;
+  }
+}

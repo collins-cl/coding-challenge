@@ -1,0 +1,34 @@
+.topbar {
+  position: fixed;
+  display: flex;
+  padding: 1em 1.6em;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.search-w {
+  margin-left: 4em;
+}
+
+@media screen and (max-width: 600px) {
+  .topbar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    width: 32px;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,35 @@
+.searchbar-wrapper {
+  position: relative;
+}
+
+.searchbar-wrapper input {
+  padding: 0.6em 3em;
+  background: transparent;
+  border: 1px solid #24282b;
+  border-radius: 50px;
+  width: 50vw;
+  outline: none;
+  color: rgb(141, 138, 138);
+  font-size: 16px;
+}
+
+.searchbar-wrapper img {
+  position: absolute;
+  left: 0;
+  margin-left: 1em;
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .searchbar-wrapper input {
+    display: none;
+  }
+
+  .searchbar-wrapper img {
+    position: absolute;
+    left: -3em;
+    margin-left: 1em;
+    margin-top: -2px;
+    width: 32px;
+  }
+}
