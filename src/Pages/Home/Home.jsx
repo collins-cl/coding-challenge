@@ -7,26 +7,24 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-wrapper">
-        <div className="hero-flex">
-          <div className="h-f-one">
-            <img src={Tilt} alt="" className="tilt-image" />
-            <div className="h-f-one-wrapper">
-              <div className="content">
-                <div className="one">Currated playlist</div>
+        <div className="h-f-one">
+          <img src={Tilt} alt="" className="tilt-image" />
+          <div className="h-f-one-wrapper">
+            <div className="content">
+              <div className="one">Currated playlist</div>
 
-                <div className="two">
-                  <div className="a">R & B Hits</div>
+              <div className="two">
+                <div className="a">R & B Hits</div>
 
-                  <div className="b">
-                    All mine, Lie again, Petty call me everyday, Out of time, No
-                    love, Bad habit, and so much more
-                  </div>
+                <div className="b">
+                  All mine, Lie again, Petty call me everyday, Out of time, No
+                  love, Bad habit, and so much more
                 </div>
-                <div className="three">bjcjbajkcbkckc</div>
               </div>
-              <div className="img">
-                <img src={Person} alt="" />
-              </div>
+              <div className="three">bjcjbajkcbkckc</div>
+            </div>
+            <div className="img">
+              <img src={Person} alt="" />
             </div>
           </div>
         </div>

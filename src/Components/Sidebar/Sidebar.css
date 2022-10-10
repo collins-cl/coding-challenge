@@ -96,9 +96,6 @@
     height: calc(100vh - 6vh);
     width: 100vw;
     padding: 1em;
-
-  z-index: 88;
-
   }
 
   .navlinks-active .links {
