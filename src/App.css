@@ -17,20 +17,10 @@ a {
 
 .App {
   display: flex;
-  position: relative;
+  position: absolute;
+  top: 4em;
+  width: 100%;
 }
 
-.otherside {
-  position: absolute;
-  top: 10vh;
-  left: 12vh;
-}
-@media screen and (max-width: 600px) {
-  .App {
-    flex-direction: column;
-  }
-  .otherside {
-    top: 10vh;
-    left: 10px;
-  }
-}
+/* .otherside {
+} */

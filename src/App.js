@@ -31,11 +31,13 @@ function App() {
         hamburgerClose={hamburgerClose}
         hamburgerOpen={hamburgerOpen}
       />
+
       <div className="App">
         <Sidebar open={open} />
         <div className="otherside">
+          scncsncsmcsmcsmscmscms
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" exact element={<Home />} />
           </Routes>
         </div>
       </div>

@@ -20,16 +20,3 @@
   margin-top: 12px;
 }
 
-@media screen and (max-width: 600px) {
-  .searchbar-wrapper input {
-    display: none;
-  }
-
-  .searchbar-wrapper img {
-    position: absolute;
-    left: -3em;
-    margin-left: 1em;
-    margin-top: -2px;
-    width: 32px;
-  }
-}
