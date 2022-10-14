@@ -11,6 +11,10 @@ body {
   color: white;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 a {
   color: white;
 }
@@ -22,6 +26,7 @@ a {
 
 .otherside {
   flex: 12;
+  margin-left: 5em;
 }
 
 @media screen and (max-width: 600px) {
@@ -33,5 +38,6 @@ a {
 
   .otherside {
     flex: auto;
+    margin-left: 0;
   }
 }

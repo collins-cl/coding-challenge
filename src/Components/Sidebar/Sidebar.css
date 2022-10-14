@@ -1,6 +1,8 @@
 .sidebar {
   flex: 1;
   height: calc(100vh - 4em);
+  position: fixed;
+  width: 6em;
 }
 
 .sidebar-w {

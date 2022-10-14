@@ -3,6 +3,7 @@ import "../Home/Home.css";
 import Tilt from "../../Assets/Vector.svg";
 import Person from "../../Assets/personphoto.png";
 import TopCharts from "../../Components/TopCharts/TopCharts";
+import NewReleases from "../../Components/NewReleases/NewReleases";
 
 const Home = () => {
   return (
@@ -33,6 +34,10 @@ const Home = () => {
             <div className="container-two">
               <TopCharts />
             </div>
+          </div>
+
+          <div className="hero-container-two">
+            <NewReleases />
           </div>
         </div>
       </div>

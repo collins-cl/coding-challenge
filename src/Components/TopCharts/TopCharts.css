@@ -67,6 +67,10 @@
     overflow-y: scroll;
   }
 
+  .c-t-box::-webkit-scrollbar {
+    display: none;
+  }
+
   .c-t-box .item {
     min-width: 75vw;
     height: 25vh;
@@ -87,7 +91,7 @@
     align-items: flex-start;
   }
 
-  .c-t-box .item .pic-desc img{
+  .c-t-box .item .pic-desc img {
     width: 100px;
     height: 100px;
   }
@@ -106,6 +110,10 @@
     margin-left: 0;
     font-weight: lighter;
     font-size: 15px;
+  }
+
+  .pic-desc .desc > div {
+    margin-top: 5px;
   }
 
   .pic-desc .desc .artist {

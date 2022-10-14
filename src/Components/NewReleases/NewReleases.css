@@ -1,0 +1,54 @@
+.newR {
+  margin-top: 2em;
+}
+
+.newR-head {
+  margin-top: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+}
+
+.newR .content {
+  margin-top: 0.5em;
+}
+
+.newR .content .title {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 17px;
+}
+
+.newR .content .artist {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.wrapper {
+  max-width: 85vw;
+  display: flex;
+  gap: 1em;
+  flex-direction: row;
+  overflow-x: scroll;
+  padding: 1em;
+}
+
+.newR .wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    max-width: 95vw;
+    overflow-x: scroll;
+    gap: 0;
+  }
+  
+  .newR .content{
+    margin-right: 10px;
+  }
+
+  .newR .content > div {
+    margin-top: 5px;
+  }
+}
