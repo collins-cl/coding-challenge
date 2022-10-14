@@ -2,6 +2,7 @@ import React from "react";
 import "../Home/Home.css";
 import Tilt from "../../Assets/Vector.svg";
 import Person from "../../Assets/personphoto.png";
+import TopCharts from "../../Components/TopCharts/TopCharts";
 
 const Home = () => {
   return (
@@ -30,22 +31,7 @@ const Home = () => {
             </div>
 
             <div className="container-two">
-              <div className="head">Top Charts</div>
-
-              <div className="c-t-box">
-                <div className="pic-desc">
-                  <img src="" alt="" />
-                  <div className="desc">
-                    <div className="title">Golden Ages of 80s</div>
-                    <div className="artist">Sean Swadder</div>
-                    <div className="duration">101:12:09</div>
-                  </div>
-                </div>
-
-                <div className="like-button">
-
-                </div>
-              </div>
+              <TopCharts />
             </div>
           </div>
         </div>

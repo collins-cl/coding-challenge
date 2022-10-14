@@ -1,0 +1,119 @@
+.topcharts .head {
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.c-t-box {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.c-t-box .item {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em 1em;
+  background: rgba(26, 30, 31, 1);
+  border-radius: 20px;
+}
+
+.c-t-box .item .pic-desc {
+  display: flex;
+  align-items: flex-start;
+}
+
+.c-t-box .item .like-button {
+  cursor: pointer;
+}
+
+.c-t-box .item .like-button img {
+  padding: 5px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.pic-desc .desc {
+  margin-left: 10px;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.pic-desc .desc .artist {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.pic-desc .desc .duration {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .topcharts .head {
+    font-size: 1.4em;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .c-t-box {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    padding: 0 10px 15px 10px;
+    overflow-y: scroll;
+  }
+
+  .c-t-box .item {
+    min-width: 75vw;
+    height: 25vh;
+    margin: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.8em 1em;
+    background: rgba(26, 30, 31, 1);
+    border-radius: 20px;
+  }
+
+  .c-t-box .item .pic-desc {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .c-t-box .item .pic-desc img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .c-t-box .item .like-button {
+    cursor: pointer;
+  }
+
+  .c-t-box .item .like-button img {
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+  }
+
+  .pic-desc .desc {
+    margin-left: 0;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+
+  .pic-desc .desc .artist {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+  }
+
+  .pic-desc .desc .duration {
+    font-size: 12px;
+  }
+}

@@ -2,12 +2,17 @@
   padding: 1em;
 }
 
+.hero-container-one {
+  display: flex;
+  gap: 2.5em;
+}
+
 .container {
   background-color: rgba(96, 158, 175, 1);
   position: relative;
   display: flex;
   align-items: flex-start;
-  width: 700px;
+  width: 52vw;
   height: 350px;
   padding: 1em 0;
   border-radius: 15px;
@@ -51,11 +56,21 @@
   z-index: 3;
 }
 
+.container-two {
+  width: 33vw;
+}
+
 @media screen and (max-width: 600px) {
   .home-wrapper {
     padding: 0;
     max-width: 95vw;
     margin: auto;
+  }
+
+  .hero-container-one {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
   }
 
   .container {
@@ -64,7 +79,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    max-width: 95vw;
+    width: 95vw;
     margin: auto;
     height: 400px;
     padding: 1em 0;
@@ -108,5 +123,9 @@
 
   .container .img {
     z-index: 3;
+  }
+
+  .container-two {
+    width: 95vw;
   }
 }
