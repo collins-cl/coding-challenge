@@ -1,7 +1,6 @@
 .sidebar {
-  position: fixed;
+  flex: 1;
   height: calc(100vh - 4em);
-  width: 6em;
 }
 
 .sidebar-w {
@@ -64,9 +63,9 @@
 
 @media screen and (max-width: 600px) {
   .sidebar {
-    position: relative;
     height: 0;
     width: 0;
+    z-index: 999;
   }
 
   .sidebar-w {
@@ -86,6 +85,7 @@
     flex-direction: column;
     height: calc(100vh - 4em);
     padding: 1em;
+    margin-left: -10px;
   }
 
   .navlinks-active .links {
@@ -141,10 +141,10 @@
 
   .navlinks-active .links > *,
   .navlinks-active .actions > * {
-    margin-top: 3.5em;
+    margin-top: 3.3em;
   }
 
   .navlinks-active .links {
-    margin-top: -3em;
+    margin-top: -1.8em;
   }
 }

@@ -10,7 +10,7 @@ const Topbar = ({ open, hamburgerClose, hamburgerOpen }) => {
       <div className="logo-wrapper">
         <div className="hamburger">{open ? hamburgerClose : hamburgerOpen}</div>
         <div className="logo">
-          <Link to="home">
+          <Link to="/">
             <img src={Logo} alt="" />
           </Link>
         </div>

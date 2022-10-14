@@ -35,7 +35,6 @@ function App() {
       <div className="App">
         <Sidebar open={open} />
         <div className="otherside">
-          scncsncsmcsmcsmscmscms
           <Routes>
             <Route path="/" exact element={<Home />} />
           </Routes>
