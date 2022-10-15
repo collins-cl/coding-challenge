@@ -11,7 +11,7 @@ body {
   color: white;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -27,6 +27,14 @@ a {
 .otherside {
   flex: 12;
   margin-left: 5em;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  backdrop-filter: blur(20px);
+  width: 100%;
+  height: 15vh;
 }
 
 @media screen and (max-width: 600px) {

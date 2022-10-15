@@ -52,12 +52,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .topcharts .head {
-    font-size: 1.4em;
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
-
   .c-t-box {
     margin-top: 1em;
     display: flex;

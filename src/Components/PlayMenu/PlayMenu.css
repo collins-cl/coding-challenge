@@ -1,0 +1,101 @@
+.playmenu-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 4em 1em 3em;
+}
+
+.playmenu-wrapper .cont-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.playmenu-wrapper .cont-1 .img img {
+  width: 60px;
+  border-radius: 15px;
+}
+
+.cont-1 .song {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.cont-1 .artist {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.44);
+}
+
+.playmenu-wrapper .cont-2 {
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.cont-2 .controls {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls .play {
+  background-color: rgba(250, 205, 102, 1);
+  padding: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.controls .play .play-button {
+  font-size: 25px;
+}
+
+.cont-2 .playprogress .progress {
+  width: 55vw;
+  height: 5px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.cont-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cont-3 .volume-progress .progress {
+  width: 100px;
+  height: 5px;
+  margin-top: -5px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .playmenu-wrapper {
+    max-width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0 0 0;
+  }
+  .playmenu-wrapper .cont-3 {
+    display: none;
+  }
+
+  .playmenu-wrapper .cont-2 {
+    gap: 0;
+  }
+
+  .cont-2 .playprogress{
+    margin-top: 10px;
+  }
+}

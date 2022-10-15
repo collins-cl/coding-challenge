@@ -6,6 +6,7 @@ import Topbar from "./Components/Topbar/Topbar";
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import hamOpen from "./Assets/menu1.png";
+import PlayMenu from "./Components/PlayMenu/PlayMenu";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -39,6 +40,10 @@ function App() {
             <Route exact path="/" element={<Home />} />
           </Routes>
         </div>
+      </div>
+
+      <div className="bottom-bar">
+        <PlayMenu />
       </div>
     </Router>
   );
