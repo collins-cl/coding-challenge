@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "../PlayMenu/PlayMenu.css";
 import PlayerImage from "../../Assets/Rectangle25.png";
-import { BsShuffle, BsPlay, BsFOr } from "react-icons/bs";
-import { MdSkipNext, MdSkipPrevious, MdPause } from "react-icons/md";
+import { BsShuffle, BsPlay } from "react-icons/bs";
+import { MdSkipNext, MdSkipPrevious, MdPause, MdPlayArrow } from "react-icons/md";
 import { TbRepeat } from "react-icons/tb";
 import { IoMdVolumeHigh } from "react-icons/io";
 
 const PlayMenu = () => {
+  const [play, setPlay] = useState(false);
+
+  const togglePlay = () => {
+    setPlay(!play);
+  };
+
   return (
     <div className="playmenu">
       <div className="playmenu-wrapper">
@@ -29,8 +35,12 @@ const PlayMenu = () => {
               <MdSkipPrevious />
             </div>
 
-            <div className="play">
-              <BsPlay className="play-button" />
+            <div className="play" onClick={togglePlay}>
+              {play ? (
+                <MdPause className="play-button" />
+              ) : (
+                <MdPlayArrow className="play-button" />
+              )}
             </div>
 
             <div className="next">
