@@ -1,0 +1,125 @@
+.chart {
+  animation: fadeIn ease 1s forwards;
+}
+
+.chart-container {
+  padding: 1.5em;
+}
+
+.chart-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.c-wrapper-one img {
+  border-radius: 20px;
+  width: 350px;
+}
+
+.c-wrapper-two {
+  margin-left: 2em;
+  max-width: 550px;
+}
+
+.c-wrapper-two .info .head {
+  font-size: 2em;
+  color: rgba(164, 199, 198, 1);
+}
+
+.c-wrapper-two .info .details {
+  margin-top: 0.5em;
+  font-weight: lighter;
+  font-size: 15px;
+  color: rgba(239, 238, 224, 1);
+}
+
+.c-wrapper-two .info .duration {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: rgba(239, 238, 224, 1);
+  gap: 8px;
+}
+
+.c-wrapper-two .chart-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+  max-width: 320px;
+}
+
+.chart-actions .play-all,
+.chart-actions .add-collection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 1em;
+  background-color: rgba(27, 27, 27, 0.801);
+  border-radius: 32px;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.chart-actions .play-all,
+.chart-actions .add-collection,
+.chart-actions .like-all {
+  cursor: pointer;
+}
+
+.chart-actions .like-all img {
+  background-color: rgba(27, 27, 27, 0.801);
+  padding: 0.9em;
+  border-radius: 50%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .chart {
+    max-width: 95vw;
+    margin: auto;
+  }
+
+  .chart-container {
+    padding: 0;
+  }
+
+  .chart-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .c-wrapper-one img {
+    border-radius: 20px;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .c-wrapper-two {
+    margin-left: 0;
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .c-wrapper-two .chart-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 1em;
+  }
+}

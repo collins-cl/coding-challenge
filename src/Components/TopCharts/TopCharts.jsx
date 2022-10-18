@@ -2,6 +2,7 @@ import React from "react";
 import "../TopCharts/TopCharts.css";
 import LikeButton from "../../Assets/Heart.png";
 import ChartsDummyText from "../ChartsDummy";
+import { Link } from "react-router-dom";
 
 const TopCharts = () => {
   const Topchart = ChartsDummyText;
@@ -17,7 +18,9 @@ const TopCharts = () => {
               <img src={chart.img} alt="" />
 
               <div className="desc">
-                <div className="title">{chart.title}</div>
+                <div className="title">
+                  <Link to={`/topchart/${chart.id}`}>{chart.title}</Link>
+                </div>
                 <div className="artist">{chart.artist}</div>
                 <div className="duration">{chart.duration}</div>
               </div>

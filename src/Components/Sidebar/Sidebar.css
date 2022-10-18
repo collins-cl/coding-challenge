@@ -3,6 +3,7 @@
   height: calc(100vh - 4em);
   position: fixed;
   width: 6em;
+  z-index: 100;
 }
 
 .sidebar-w {

@@ -7,14 +7,14 @@ const ChartsDummyText = [
     img: "../../Images/Rectangle17.png",
   },
   {
-    id: 1,
+    id: 2,
     title: "Reggae “n” blues",
     artist: "Dj YK mule",
     duration: "1:02:42",
     img: "../../Images/Rectangle17-1.png",
   },
   {
-    id: 1,
+    id: 3,
     title: "Tomorrow’s tunes",
     artist: "Obi Datti",
     duration: "2:01:25",
