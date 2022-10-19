@@ -1,0 +1,164 @@
+.collections {
+  padding: 1em;
+  animation: fadeIn ease 1s forwards;
+}
+
+.collections-wrapper .options {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.collections-wrapper .options > div {
+  padding: 6px 2em 10px 2em;
+  border-radius: 27px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.options .active {
+  background-color: #facd66;
+  border: none;
+  outline: none;
+  color: #1d2123;
+}
+
+.options .inactive {
+  border: 1px solid rgba(139, 139, 139, 0.815);
+  color: rgba(139, 139, 139, 0.815);
+}
+
+.my-collections {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.my-collections > div {
+  margin: 5px;
+}
+
+.my-collections .cont {
+  width: 230px;
+  height: 250px;
+  background-color: #333;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: transform 0.7s;
+}
+
+.my-collections .cont:hover .card-image {
+  transform: scale(1.15);
+}
+
+.my-collections .cont .card-info {
+  width: 85%;
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-info .details {
+  transform: translateY(40px);
+  transition: transform 0.7s;
+}
+
+.card-info .head {
+  font-size: 2.4em;
+  font-weight: lighter;
+  line-height: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.card-info .artist {
+  font-size: 12px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: -10px;
+}
+
+.card-info .likes-count {
+  font-size: 12px;
+  margin-top: 1.2em;
+}
+
+.play-collections {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: #facd66;
+  padding: 0.6em 0.8em;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.7s;
+}
+
+.play-collections .play-c {
+  font-size: 14px;
+  color: white;
+}
+
+.my-collections .cont:hover .play-collections {
+  opacity: 1;
+}
+
+.my-collections .cont:hover .card-info .details {
+  transform: translateY(0);
+}
+
+.liked-items {
+  padding: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .collections {
+    padding: 0;
+  }
+
+  .collections-wrapper .options {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    justify-content: space-around;
+  }
+
+  .my-collections {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .my-collections > div {
+    margin: 5px;
+  }
+
+  .my-collections .cont {
+    width: 43vw;
+    height: 250px;
+  }
+
+  .my-collections .cont .card-info {
+    width: 85%;
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+  }
+}

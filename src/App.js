@@ -8,6 +8,7 @@ import { FaTimes } from "react-icons/fa";
 import hamOpen from "./Assets/menu1.png";
 import PlayMenu from "./Components/PlayMenu/PlayMenu";
 import Chart from "./Pages/Chart/Chart";
+import Collections from "./Pages/Collections/Collections";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -39,7 +40,8 @@ function App() {
         <div className="otherside">
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/topchart/:id" element={<Chart />} />
+            <Route path="/topchart/:id" element={<Chart />} />
+            <Route path="/collections" element={<Collections />} />
           </Routes>
         </div>
       </div>

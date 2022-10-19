@@ -17,7 +17,7 @@ const Sidebar = ({ open }) => {
               <p>Home</p>
             </NavLink>
 
-            <NavLink to="music">
+            <NavLink to="collections">
               <SiApplemusic className="icon" />
               <p>Music</p>
             </NavLink>
