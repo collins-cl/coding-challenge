@@ -6,7 +6,7 @@ import Searchbar from "../SearchBar/Searchbar";
 
 const Topbar = ({ open, hamburgerClose, hamburgerOpen }) => {
   return (
-    <div className="topbar">
+    <div className={open ? "topbar-active" : "topbar"}>
       <div className="logo-wrapper">
         <div className="hamburger">{open ? hamburgerClose : hamburgerOpen}</div>
         <div className="logo">

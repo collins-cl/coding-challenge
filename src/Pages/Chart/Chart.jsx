@@ -4,6 +4,7 @@ import LeadImage from "../../Assets/Lead-image.svg";
 import PlayAll from "../../Assets/playall.png";
 import Collection from "../../Assets/collection.png";
 import LikeAll from "../../Assets/love-button.png";
+import Albumslist from "../../Components/AlbumsList/Albumslist";
 
 const Chart = () => {
   return (
@@ -21,7 +22,7 @@ const Chart = () => {
           top: 0,
           right: 0,
           bottom: 0,
-          filter: "brightness(.15)",
+          filter: "brightness(.12)",
         }}
       ></div>
 
@@ -58,6 +59,8 @@ const Chart = () => {
             </div>
           </div>
         </div>
+
+        <Albumslist />
       </div>
     </div>
   );
