@@ -34,12 +34,21 @@
   padding: 5px;
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.11);
+  cursor: pointer;
+}
+
+.pic-desc img{
+  cursor: pointer;
 }
 
 .pic-desc .desc {
   margin-left: 10px;
   font-weight: lighter;
   font-size: 15px;
+}
+
+.pic-desc .desc .title{
+  cursor: pointer;
 }
 
 .pic-desc .desc .artist {

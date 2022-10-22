@@ -70,12 +70,27 @@
   gap: 10px;
 }
 
-.cont-3 .volume-progress .progress {
-  width: 100px;
+.volume-progress {
+  position: relative;
   height: 5px;
+  outline: none;
+}
+
+.volume-progress::-webkit-slider-runnable-track {
+  background-color: #facd66;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.volume-progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
   margin-top: -5px;
-  border-radius: 50px;
-  background-color: white;
+  cursor: pointer;
+  box-sizing: content-box;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: orangered;
 }
 
 @media screen and (max-width: 600px) {
@@ -95,7 +110,7 @@
     gap: 0;
   }
 
-  .cont-2 .playprogress{
+  .cont-2 .playprogress {
     margin-top: 10px;
   }
 }

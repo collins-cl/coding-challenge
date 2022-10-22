@@ -16,6 +16,10 @@ function App() {
     setOpen(!open);
   };
 
+  const handleClose=()=>{
+    setOpen(false)
+  }
+
   const hamburgerOpen = (
     <img src={hamOpen} alt="" onClick={handleClick} className="hamburger" />
   );
@@ -36,7 +40,7 @@ function App() {
       />
 
       <div className="App">
-        <Sidebar open={open} />
+        <Sidebar open={open} handleClose={handleClose} />
         <div className="otherside">
           <Routes>
             <Route exact path="/" element={<Home />} />

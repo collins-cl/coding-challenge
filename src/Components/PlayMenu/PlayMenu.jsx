@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import "../PlayMenu/PlayMenu.css";
 import PlayerImage from "../../Assets/Rectangle25.png";
 import { BsShuffle, BsPlay } from "react-icons/bs";
-import { MdSkipNext, MdSkipPrevious, MdPause, MdPlayArrow } from "react-icons/md";
+import {
+  MdSkipNext,
+  MdSkipPrevious,
+  MdPause,
+  MdPlayArrow,
+} from "react-icons/md";
 import { TbRepeat } from "react-icons/tb";
 import { IoMdVolumeHigh } from "react-icons/io";
 
@@ -57,13 +62,8 @@ const PlayMenu = () => {
           </div>
         </div>
         <div className="cont-3">
-          <div className="volume">
-            <IoMdVolumeHigh />
-          </div>
-
-          <div className="volume-progress">
-            <div className="progress"></div>
-          </div>
+          <IoMdVolumeHigh className="volume" />
+          <input type="range" name="" className="volume-progress" />
         </div>
       </div>
     </div>
