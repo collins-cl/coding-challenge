@@ -4,7 +4,9 @@ import Logo from "../../Assets/logo.svg";
 import { Link } from "react-router-dom";
 import Searchbar from "../SearchBar/Searchbar";
 
+
 const Topbar = ({ open, hamburgerClose, hamburgerOpen }) => {
+
   return (
     <div className={open ? "topbar-active" : "topbar"}>
       <div className="logo-wrapper">

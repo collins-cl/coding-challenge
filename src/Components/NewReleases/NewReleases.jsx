@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { MyContext } from "../../Context/PlayContext";
 import "../NewReleases/NewReleases.css";
 import ReleaseDummy from "../ReleaseDummyData";
 
 const NewReleases = () => {
   const Release = ReleaseDummy;
+
+  const { togglePlayMenu } = useContext(MyContext);
 
   return (
     <div className="newR">
@@ -12,7 +15,11 @@ const NewReleases = () => {
       <div className="wrapper">
         {Release.map((item) => (
           <div className="content" key={item.id}>
-            <div className="img">
+            <div
+              className="img"
+              style={{ cursor: "pointer" }}
+              onClick={togglePlayMenu}
+            >
               <img src={item.img} alt="" />
             </div>
             <div className="title">{item.title}</div>

@@ -1,8 +1,10 @@
-import React from "react";
+import React,{useContext} from "react";
 import ReleaseDummy from "../ReleaseDummyData";
+import { MyContext } from "../../Context/PlayContext";
 
 const PopularRelease = () => {
   const Release = ReleaseDummy;
+  const { togglePlayMenu } = useContext(MyContext);
 
   return (
     <div className="newR">
@@ -11,7 +13,11 @@ const PopularRelease = () => {
       <div className="wrapper">
         {Release.map((item) => (
           <div className="content" key={item.id}>
-            <div className="img">
+            <div
+              className="img"
+              style={{ cursor: "pointer" }}
+              onClick={togglePlayMenu}
+            >
               <img src={item.img} alt="" />
             </div>
             <div className="title">{item.title}</div>

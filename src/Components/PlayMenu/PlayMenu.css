@@ -1,3 +1,11 @@
+.playmenu {
+  position: fixed;
+  bottom: 0;
+  backdrop-filter: blur(20px);
+  width: 100%;
+  height: 15vh;
+}
+
 .playmenu-wrapper {
   width: 100%;
   display: flex;
